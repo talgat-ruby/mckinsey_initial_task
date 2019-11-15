@@ -1,0 +1,19 @@
+{
+  "name": "mckinsey_initial_task",
+  "version": "1.0.0",
+  "description": "task for mckinsey",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talgat-ruby/mckinsey_initial_task.git"
+  },
+  "author": "Talgat Saribayev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talgat-ruby/mckinsey_initial_task/issues"
+  },
+  "homepage": "https://github.com/talgat-ruby/mckinsey_initial_task#readme"
+}
