@@ -2,6 +2,7 @@ const generateGraph = require("./generateGraph");
 const calculateRouteDistance = require("./calculateRouteDistance");
 const { sumOfTrips, EXACT, MAX } = require("./sumOfTrips");
 const getShortestDist = require("./getShortestDist");
+const getNumberOfDiffRoutes = require("./getNumberOfDiffRoutes");
 
 function handler(data = "") {
 	const result = [];
@@ -22,6 +23,9 @@ function handler(data = "") {
 	// 8 - 9
 	result.push(getShortestDist(graph, "A", "C"));
 	result.push(getShortestDist(graph, "B", "B"));
+
+	// 10
+	result.push(getNumberOfDiffRoutes(graph, "C", "C", 30));
 
 	return result;
 }
