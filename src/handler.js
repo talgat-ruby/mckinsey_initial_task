@@ -1,6 +1,7 @@
 const generateGraph = require("./generateGraph");
 const calculateRouteDistance = require("./calculateRouteDistance");
 const { sumOfTrips, EXACT, MAX } = require("./sumOfTrips");
+const getShortestDist = require("./getShortestDist");
 
 function handler(data = "") {
 	const result = [];
@@ -17,6 +18,10 @@ function handler(data = "") {
 	// 6 - 7
 	result.push(sumOfTrips(graph, "C", "C", 3, MAX));
 	result.push(sumOfTrips(graph, "A", "C", 4, EXACT));
+
+	// 8 - 9
+	result.push(getShortestDist(graph, "A", "C"));
+	result.push(getShortestDist(graph, "B", "B"));
 
 	return result;
 }
