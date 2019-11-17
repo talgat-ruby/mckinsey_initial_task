@@ -1,5 +1,3 @@
-const get = require("./get");
-
 function calcDistance(graph, fullPath, end, currDist, min) {
 	const start = fullPath.slice(-1);
 	const nextStarts = Object.entries(graph[start]);
